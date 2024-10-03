@@ -72,7 +72,7 @@ function App() {
           {buttonNameInput && <input className="text-white text-3xl cursor-pointer rounded-3xl border-1 border-black bg-blue-600 max-w-12" type="submit" value="+"></input>}
       </form>
       <div className="result">
-          <button onClick={() => setResult(generateCode())}>Generate Code!</button>
+          <button className="w-1/2 bg-green-200 rounded-full my-2" onClick={() => setResult(generateCode())}>Generate Code!</button>
           <hr></hr>
           <ul className="flex flex-wrap">
             {result.length > 0 && buttonNames.map((button, index) => {
